@@ -1,3 +1,143 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+}
+
+#clock {
+    text-align: center;
+    font-size: min(150px, 15vw);
+    margin: 0;
+}
+
+#weather {
+    transform: translateX(0%);
+    background-color: black;
+    opacity: 0.7;
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#weather span {
+    display: block;
+}
+
+.container span:nth-child(n+2) {
+    margin-top: 5px; /* 스팬들 사이의 간격 조절 */
+}
+
+#logOut {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    right: 20px;
+}
+
+main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 61vh;
+}
+
+#quote {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 100%;
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+}
+
+#quote p {
+    margin: 20px;
+}
+
+i {
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+#login-form input {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid black;
+    background-color: transparent;
+    font-size: min(20px, 20vw);
+    text-align: center;
+    width: 100%;
+    margin: 0 0 10px;
+}
+
+#login-form button {
+    margin: auto;
+    border: 3px solid black;
+    font-size: min(20px, 20vw);
+    width: 100%;
+}
+
 .hidden {
     display: none;
+}
+
+h3 {
+    margin: 0;
+}
+
+#todo-form {
+    width: 100%;
+}
+
+#todo-form input {
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid black;
+    background-color: transparent;
+    font-size: min(20px, 20vw);
+    text-align: center;
+    width: 100%;
+}
+
+ul {
+    width: 100%;
+    margin: 0 0 20%;
+    overflow-y: scroll;
+}
+
+li {
+    font-size: min(20px, 20vw);
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    margin-bottom: 5px;
+}
+
+li span {
+    margin: 0 10px
+}
+
+li button {
+    border-width: 0;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
